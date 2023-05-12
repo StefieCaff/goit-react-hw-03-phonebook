@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { useState } from "react"
 import { nanoid } from 'nanoid';
-import Notiflix, { Notify } from 'notiflix';
+import { Notify } from 'notiflix';
 
 /* styled components*/
 import { SVG } from 'components/Icons/Icons'; 
