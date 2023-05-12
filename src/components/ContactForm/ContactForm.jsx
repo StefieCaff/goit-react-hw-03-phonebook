@@ -11,7 +11,6 @@ import { StyledFlexColumn, StyledFlex } from 'components/styled-common';
 import { StyledTitle } from 'components/styled-common';
 
 
-
 export const ContactForm = ({ onAdd }) => {
     //set states for form reset and to capture input values    
     const [name, setName] = useState('');
@@ -42,7 +41,6 @@ export const ContactForm = ({ onAdd }) => {
         formReset();
     }
 
- 
 // helper functions  
     const formReset = () => {
         setName('');
@@ -65,11 +63,10 @@ export const ContactForm = ({ onAdd }) => {
         <StyledFlexColumn>
             <StyledTitle>Add a contact</StyledTitle>
             <StyledFlex>
-            <StyledForm onSubmit={handleSubmit}>
+            <StyledForm onSubmit={(e) => {handleSubmit(e)}}>
                 <StyledButton
                     style={{padding:5}}
                     type="submit"
-                    onClick={(e) => {handleSubmit(e)}}
                 >
                     <SVG
                         width="25"

@@ -1,8 +1,6 @@
 import {string} from 'prop-types'
 
-
 import { SVG } from 'components/Icons/Icons';
-
 
 const Button = (props) => {
     const {
@@ -10,9 +8,7 @@ const Button = (props) => {
         name
 }= props
   
-
     return (
-        
         <Button
         type={type}>
             <SVG
@@ -21,7 +17,6 @@ const Button = (props) => {
                 name={name}
             />
         </Button>
-
     );
 };
 
